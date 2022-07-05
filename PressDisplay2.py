@@ -6,6 +6,7 @@ import time
 #resetbutton = Button(17)
 #countbutton = Button(18)
 #testing can delete only this line
+#this is also another testing line
 
 starttime = datetime.now()
 textsize = 150
