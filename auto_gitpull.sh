@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sleep 10
 now=$(date +"%T")
 echo "Attempting to git pull at : $now"
 cd Brake_Press/
