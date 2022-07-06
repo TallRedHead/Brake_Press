@@ -6,7 +6,7 @@ import time
 
 # Settings. Change these values to get desired results
 
-countPin = 40
+countPin = 13 #IO27 on terminal block
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(countPin, GPIO.IN)
 
