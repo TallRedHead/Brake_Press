@@ -44,7 +44,7 @@ def addOne(countPin=countPin):
     expectationN.value = goal
     
     try:
-        if not GPIO.input(countPin) and timeElapsed==True:
+        if GPIO.input(countPin) and timeElapsed==True:
             count=count+1
             
             counterN.value = count
