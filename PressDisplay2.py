@@ -32,7 +32,7 @@ def backgroundColor(text, value, counterLimits):
             text.bg = k
             break
 
-'''
+
 def checkInput(countbutton):
     global count
     uptimeN.value = int((datetime.now() - starttime).total_seconds())
@@ -42,7 +42,7 @@ def checkInput(countbutton):
     if GPIO.input(17):
         resetCounter()
         sleep(2)
-'''
+
 
 def resetCounter():
     global count, starttime
@@ -71,6 +71,6 @@ uptimes = Box(app, align='top', width = 'fill')
 uptime = Text(uptimes, text="Uptime", size = textsize, align='left', width = 'fill')
 uptimeN = Text(uptimes, text=0, size = textsize, align='top')
 
-counter.repeat(100, addOne)
+# counter.repeat(100, addOne)
 
 app.display()
