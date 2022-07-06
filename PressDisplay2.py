@@ -4,7 +4,7 @@ from datetime import datetime
 import time
 
 #resetbutton = Button(17)
-#countbutton = Button(18)
+#countbutton = Button(27)
 
 
 starttime = datetime.now()
@@ -36,7 +36,7 @@ def backgroundColor(text, value, counterLimits):
 def checkInput(countbutton):
     global count
     uptimeN.value = int((datetime.now() - starttime).total_seconds())
-    if GPIO.input(18):
+    if GPIO.input(27):
         addOne()
         sleep(2)
     if GPIO.input(17):
