@@ -5,7 +5,6 @@ import time
 
 #resetbutton = Button(17)
 #countbutton = Button(18)
-#testing reboot pull again
 
 
 starttime = datetime.now()
