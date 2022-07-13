@@ -20,6 +20,8 @@ shiftgoal = 1000
 timeElapsedLimit = 6
 LoopTime_ms = 100
 lastPulse = datetime.now()
+minPulse = 1
+maxPulse = 5
 
 
 
@@ -44,7 +46,7 @@ def addOne(countPin=countPin):
     expectationN.value = goal
     
     try:
-        if not GPIO.input(countPin) and timeElapsed==True:
+        if not GPIO.input(countPin) and timeElapsed==True and (datetime.now()-lastPulse).seconds > minPulse and (datetime.now()-lastPulse).seconds < maxPulse:
             count=count+1
             
             counterN.value = count
