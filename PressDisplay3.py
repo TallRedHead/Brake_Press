@@ -13,7 +13,7 @@ GPIO.setup(countPin, GPIO.IN)
 starttime = datetime.now()
 shiftstart = starttime.replace (hour=8, minute=0)
 minutesPerDay = 8*60
-textsize = 190
+textsize = 175
 differenceLimits = {'red':60, 'orange':75, 'yellow':90, 'lightgreen':200}
 count = 0
 shiftgoal = 1000
@@ -66,7 +66,7 @@ app = App(title = "Machine Status")
 app.tk.attributes("-fullscreen",True)
 
 counters = Box(app, align='top', width = 'fill')
-counter = Text(counters, text="Punches        ", size = textsize, align='left', width = 'fill')
+counter = Text(counters, text="Bend Count     ", size = textsize, align='left', width = 'fill')
 counterN = Text(counters, text=0, size = textsize, align='top')
 
 expectations = Box(app, align='top', width = 'fill')
