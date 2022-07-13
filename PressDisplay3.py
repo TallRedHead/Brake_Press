@@ -20,7 +20,7 @@ shiftgoal = 1000
 timeElapsedLimit = 6
 LoopTime_ms = 100
 lastPulse = datetime.now()
-minPulse = 1 #test pull
+minPulse = 1 
 maxPulse = 5
 
 
